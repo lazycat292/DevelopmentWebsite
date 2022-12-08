@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <div id="topwrapper">
+            <h1>React Store Website</h1>
+        </div>
+        <nav id="navigation">
+            <table>
+                <tr>
+                    <td><a href="#Objective">Objective and Overview</a></td>
+                    <td><a href="#Structure">Structure</a></td>
+                    <td><a href="#Item">Displaying the Items</a></td>
+                    <td><a href="#Filter">Filtering and Sorting</a></td>
+                    <td><a href="#Cart">Cart</a></td>
+                    <td><a href="#Final">Final Product</a></td>
+                </tr>
+            </table>
+        </nav>
+        <div id="Objective" class="bodyparagraph">
+            <h2>Objective and Overview</h2>
+            <p>
+                The objective of this project is create a store website that has the ability to add/remove items from the cart using
+                React. In addition, in order to make the shopping experience much easier for the customers, I will add filtering/sorting 
+                option that will allow the customers to navigave through the items and find their needs sufficiently. The website
+                I will be creating will be a sports shop.
+            </p>
+        </div>
+        <div id="Structure" class="bodyparagraph">
+            <h2>Structure</h2>
+            <p>
+                I will be using two components StoreItem and ShowCart. StoreItem will take the data and display each items on the store.
+                ShowCart will be used similarly to display the items in the cart. Inside of the App, the data of all the avaliable items
+                are stored in a constant variable so it can be accessed throughout the App. There will be total of 7 states handling
+                variables such as cart items, filtering, sorting, and total price.
+            </p>
+            <img src="States.png" alt="Webpage" class="center">
+            <br>
+        </div>
+        <div id="Item" class = "bodyparagraph">
+            <h2>Displaying the Items</h2>
+            <p>First step I took was displaying the items on the website. I stored the data in a constant variable so that it can
+                be accessed throughout the App. Then, in the return statement, I rendered through the data and passed each item and
+                a handleclick method to a StoreItem component as props. Handleclick function will be used with the button to update
+                cart items and total price when adding or removing an item from the cart.
+            </p>
+            <img src="StoreItem.png" alt="Webpage" class="center">
+            <br>
+        </div>
+        <div id="Filter" class="bodyparagraph">
+            <h2>Filtering and Sorting</h2>
+            <p>For filtering, I decided to implement teams and types (jerseys, balls, cleats). When a button is clicked,
+                the appropriate function will run depending on type of the button (teams, types, or price sorting). Since I am
+                using states to keep track of both filters and sort type, combinations of different filters and sorting will
+                execute together.
+            </p>
+            <img src="Update.png" alt="Webpage" class="center">
+            <br>
+        </div>
+        <div id="Cart" class="bodyparagraph">
+            <h2>Cart</h2>
+            <p>Most of the cart codes were already completed in handleclick function. Cart, total price state are updated
+                in the function. I used a ShowCart component to render through the cart and print out each item. At the bottom,
+                total price will be printed out as well.
+            </p>
+            <img src="Cart.png" alt="Webpage" class="center">
+           <br>
+        </div>
+        <div id="Final" class = "bodyparagraph">
+            <h2>Final Product</h2>
+            <img src="Final.png" alt="Webpage" class="center">
+            <a class = "center" href="https://lazycat292.github.io/Development/" title="NewLink" style="color:rgb(67, 112, 210)">Link</a>
+            <br>
+    </body>
+</html>
